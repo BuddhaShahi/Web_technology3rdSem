@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notes>
+  <note id="1">
+    <to>Alice</to>
+    <from>Bob</from>
+    <subject>Meeting Reminder</subject>
+    <body>Don't forget our meeting at 10 AM tomorrow.</body>
+  </note>
+  
+  <note id="2">
+    <to>John</to>
+    <from>Emma</from>
+    <subject>Project Update</subject>
+    <body>The project deadline has been moved to next Friday.</body>
+  </note>
+  
+  <note id="3">
+    <to>Mary</to>
+    <from>David</from>
+    <subject>Lunch Invitation</subject>
+    <body>Would you like to have lunch together this afternoon?</body>
+  </note>
+</notes>

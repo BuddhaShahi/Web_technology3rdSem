@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Page Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      min-height: 80vh;
+    }
+
+    .sidebar-left {
+      width: 20%;
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-right: 2px solid #ccc;
+    }
+
+    .menu ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .menu li {
+      margin: 10px 0;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #333;
+      display: block;
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    .menu a:hover {
+      background-color: #ddd;
+    }
+
+    .main {
+      flex: 1;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    .sidebar-right {
+      width: 20%;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-left: 2px solid #ccc;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Web Page</h1>
+  </header>
+
+  <div class="container">
+    <!-- Left Sidebar -->
+    <aside class="sidebar-left">
+      <div class="menu">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <h2>Welcome!</h2>
+      <p>This is the main content area of the page.</p>
+    </main>
+
+    <!-- Right Sidebar -->
+    <aside class="sidebar-right">
+      <h3>News</h3>
+      <p>Some sidebar content here.</p>
+    </aside>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

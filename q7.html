@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Client-Side Image Map Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+    img {
+      border: 2px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Client-Side Image Map</h1>
+  <p>Click on different parts of the image below:</p>
+
+  <!-- Image with map -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Smiley.svg" alt="Smiley Face"
+       usemap="#faceMap" width="300" height="300">
+
+  <!-- Image Map -->
+  <map name="faceMap">
+    <!-- Eyes -->
+    <area shape="circle" coords="90,100,20" alt="Left Eye" href="https://example.com/left-eye">
+    <area shape="circle" coords="210,100,20" alt="Right Eye" href="https://example.com/right-eye">
+
+    <!-- Smile -->
+    <area shape="rect" coords="100,200,200,230" alt="Smile" href="https://example.com/smile">
+  </map>
+
+</body>
+</html>
